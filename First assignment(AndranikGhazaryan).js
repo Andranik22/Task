@@ -1,4 +1,4 @@
-1. Check if the given string is a palindrome. E.g. “aabbaa” is a palindrome.
+1. Check if the given string is a palindrome. E.g. "aabbaa" is a palindrome.
 
 function palindrome(str) {
 
