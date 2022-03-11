@@ -1,4 +1,4 @@
-1. Check if the given string is a palindrome. E.g. "aabbaa" is a palindrome.
+1. Check if the given string is a palindrome. E.g. “aabbaa” is a palindrome.
 
 function palindrome(str) {
 
@@ -78,7 +78,17 @@ console.log(arr)
 
 4. Create a function which will convert the given snake_case_string into a CamelCaseString.
 
+function toCamelCaseString(str){
 
+    let arr = [];
+    let newStr = str.split(/[-_]/g);
+    for (let i = 0; i < newStr.length; i++){
+        if( i > 0){
+            arr.push(newStr[i].charAt(0).toUpperCase() + newStr[i].slice(1));
+         } else { arr.push(newStr[i]) }
+    }
+    return arr.join('');
+}
 
 
 
